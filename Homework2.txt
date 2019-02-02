@@ -1,0 +1,57 @@
+- Get all female employees
+
+SELECT last_name, emp_no
+FROM employees
+where gender = 'F';
+
+
+- Get all employees hired after 01-01-1995 
+
+SELECT last_name, emp_no
+FROM employees
+where hire_date > '1995/1/1';
+
+- Get all the valid titles (with to_date equals to 01-01-9999) 
+
+SELECT valid titles
+FROM titles
+where to_date = '01-01-9999'
+
+
+- Get all salaries from 60000 to 90000
+
+SELECT last_name, emp_no
+FROM salaries
+where salary between 60000 and 90000;
+
+
+- Get all titles where title is equal to engineer
+
+SELECT ???
+FROM titles
+where title = 'engineer';
+
+
+-  Insert a new row into course table with 1, ‘CED-1250’, ‘Big Data Storage’ 
+
+INSERT INTO course (courseNum, courseTitle) 
+VALUES (‘CED-1250’, ‘Big Data Storage’);
+
+
+- Delete all male employees hired at 01-01-2009
+
+DELETE FROM employees
+where gender = 'M' && hire_date = '2009/1/1';
+
+
+- Update the salary of employee 499984 to 100000
+
+UPDATE salaries
+SET salary between 499984 and 100000;
+
+
+- Delete all titles not valid (with to_date not equal to 01-01-9999)
+
+DELETE FROM titles
+where to_date != '01-01-9999';
+
