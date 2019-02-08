@@ -13,7 +13,7 @@ where hire_date > '1995/1/1';
 
 - Get all the valid titles (with to_date equals to 01-01-9999) 
 
-SELECT valid titles
+SELECT title, emp_no
 FROM titles
 where to_date = '01-01-9999'
 
@@ -27,15 +27,15 @@ where salary between 60000 and 90000;
 
 - Get all titles where title is equal to engineer
 
-SELECT ???
+SELECT title
 FROM titles
 where title = 'engineer';
 
 
--  Insert a new row into course table with 1, ‘CED-1250’, ‘Big Data Storage’ 
+-  Insert a new row into course table with 1, â€˜CED-1250â€™, â€˜Big Data Storageâ€™ 
 
 INSERT INTO course (courseNum, courseTitle) 
-VALUES (‘CED-1250’, ‘Big Data Storage’);
+VALUES (â€˜CED-1250â€™, â€˜Big Data Storageâ€™);
 
 
 - Delete all male employees hired at 01-01-2009
