@@ -20,7 +20,7 @@ where to_date = '01-01-9999'
 
 - Get all salaries from 60000 to 90000
 
-SELECT last_name, emp_no
+SELECT emp_no
 FROM salaries
 where salary between 60000 and 90000;
 
