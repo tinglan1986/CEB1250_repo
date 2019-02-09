@@ -1,26 +1,14 @@
 - Write a SQL query to get the third highest salary of an employee from employee_table
 
-select emp_no, salary 
- from 
- (
- select 
-    employees.*, details.salary,
-    row_number() over (order by salary desc) salaryrank
- from 
-      employees
- inner join 
-      details
-           on employees.emp_no = details.emp_no
- ) v
- where salaryrank=3
+SELECT * FROM employees ORDER BY salaries DESC LIMIT 1 OFFSET 2;
 
 
-- Write a SQL query to find the names of employees that begin with ‘A’ 
+- Write a SQL query to find the names of employees that begin with â€˜Aâ€™ 
 
-select * from employees where first_name like 'A%'
+SELECT * from employees where first_name like 'A%'
 
 
-- What is the difference between ‘HAVING’ CLAUSE and a ‘WHERE’ CLAUSE
+- What is the difference between â€˜HAVINGâ€™ CLAUSE and a â€˜WHEREâ€™ CLAUSE
 
 'Where' is used to filter the rows or columns, whereas 'Having' is used to filter the groups.
 
