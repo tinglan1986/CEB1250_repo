@@ -3,9 +3,11 @@
 SELECT * FROM employees ORDER BY salaries DESC LIMIT 1 OFFSET 2;
 
 
+
 - Write a SQL query to find the names of employees that begin with ‘A’ 
 
 SELECT * from employees where first_name like 'A%'
+
 
 
 - What is the difference between ‘HAVING’ CLAUSE and a ‘WHERE’ CLAUSE
@@ -13,9 +15,30 @@ SELECT * from employees where first_name like 'A%'
 'Where' is used to filter the rows or columns, whereas 'Having' is used to filter the groups.
 
 
+
 - List, and explain the elements of an Entities and Relationships model
 
 In table, it mostly consists of key value and other common values. The key value is a common attribute that can be shared by two or multiple tables, whereas other common values are mostly attribute to certain table.
+
+
+
+- What are the different categories of SQL statements, what does each group do 
+
+
+•DDL (Data Definition Language): create, alter, and drop schema objects
+
+
+•DML (Data Manipulation Language): access and manipulate data in existing schema objects
+
+
+•DQL (Data Query Language): retrieve the data from a Table or a View
+
+
+•DCL (Data Control Language): granting or revoking certain permissions to various users and roles mentioned in the database
+
+
+•Transactional control commands: manage different transactions occurring within a database
+
 
 
 - List, and explain, the different types of joins
@@ -23,9 +46,11 @@ In table, it mostly consists of key value and other common values. The key value
 Inner join is pretty much like self join where it will only display the shared overlapped attributes between the two tables. The left join is the inner join + all attributes from the left table, and the right join is the inner join + all attributes from the right table. Finally, the outer join is everything within the two tables.
 
 
+
 - What is the difference between NULL value, Zero, and Blank space
 
 Null represents a missing value, while zero is still a value, and blank space is some kind of indentation for the SQL language.
+
 
 
 - Write a SQL that returns the employee name and title for all employees with even number as actual salary (to_date is 9999-01-01)
@@ -35,6 +60,7 @@ FROM employees e, titles t, salaries s
 WHERE e.emp_no = t.emp_no
 AND t.to_date = '9999-01-01'
 AND s.salary % 2 = 0;
+
 
 
 -  What is wrong with the following query, re-write it making the needed corrections.
